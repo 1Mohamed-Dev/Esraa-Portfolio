@@ -14,6 +14,7 @@ html{
 
 body{
     font-family: 'Cairo', sans-serif;
+    /* font-family: 'Audiowide', cursive; */
 }
 
 :root{
@@ -54,3 +55,62 @@ a{
 }
 
 /* End Global Rules */
+
+/*Start Header*/
+
+header{
+    background-color: #C4DFAA;
+}
+
+header .con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+header img{
+    height: 50px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 19px;
+    font-weight: 700;
+    height: 65px;
+    color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    z-index: 5;
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+header .con ul li a::before{
+    content: "";
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    background-color: #90C8AC;
+    bottom: -100%;
+    right: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+header .con ul li a:hover::before{
+    bottom: 0;
+}
+
+/* End Header */
