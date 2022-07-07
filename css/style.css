@@ -1,0 +1,56 @@
+/*Start Global Rules*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+:root{
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.con{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .con{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .con{
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .con{
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
