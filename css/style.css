@@ -134,3 +134,88 @@ header .con ul li a:hover::before{
 }
 
 /* End Header */
+
+/*Start Landing*/
+
+.landing{
+    position: relative;
+    background-color: #b9ffea;
+}
+
+.landing .con{
+    min-height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.landing .content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.landing .content h1{
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: -1.4px;
+}
+
+.landing .content p{
+    color: rgb(82, 82, 82);
+    font-size: 23px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.landing .content .btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.landing .content .btns a{
+    padding: 5px 20px;
+    background-color: #71C9CE;
+    color: #E3FDFD;
+    font-weight: 400;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.landing .content .btns .port{
+    margin-left: 15px;
+    padding: 3px 18px;
+    background-color: transparent;
+    border: #71C9CE solid 2px;
+    color: #71C9CE;
+}
+
+.landing img{
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .landing .img{
+        display: none;
+    }
+
+    .landing .content{
+        text-align: center;
+    }
+
+    .landing .content .btns{
+        justify-content: center;
+    }
+
+    .landing .content p{
+        margin: 0 auto;
+        font-size: 19px;
+    }
+    .landing .con{
+        min-height: calc(100vh - 99px);
+    }
+}
+
+/* End Landing */
