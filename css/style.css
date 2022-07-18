@@ -117,4 +117,20 @@ header .con ul li a:hover::before{
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    header .con{
+        flex-direction: column;
+    }
+
+    header .con h2{
+        margin: 5px 0;
+    }
+    
+    header ul li a{
+        font-size: 15px;
+        padding: 0 15px;
+        height: 55px;
+    }
+}
+
 /* End Header */
